@@ -1,9 +1,11 @@
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 
 Given("I am on the sign up page", () => {
-  cy.visit("https://www.rhipe.com/sign-me-up/");
+  cy.visit(Cypress.env("prodUrl"));
+  cy.get("h1").should("have.text", "Sign Me Up ");
+
+  //cy.visit(Cypress.env("devUrl"));
   //cy.get(".entry-title").should('have.text',"Sign up with Rhipe")
-  cy.get('h1').should('have.text',"Sign Me Up ")
 });
 
 When("I fill in the valid form details from below:", (customerInfoTable) => {
