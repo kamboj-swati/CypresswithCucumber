@@ -1,0 +1,27 @@
+{
+  "name": "cypresswithcucumber",
+  "version": "1.0.0",
+  "description": "cypress framework with cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamboj-swati/CypresswithCucumber.git"
+  },
+  "author": "Swati Kamboj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamboj-swati/CypresswithCucumber/issues"
+  },
+  "homepage": "https://github.com/kamboj-swati/CypresswithCucumber#readme",
+  "devDependencies": {
+    "cypress": "^10.11.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/signup"
+  }
+}
