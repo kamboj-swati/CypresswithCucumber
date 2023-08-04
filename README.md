@@ -19,7 +19,7 @@ Please follow below steps to make this code run on your machine -
 1. Clone the Repo 
    git clone https://github.com/kamboj-swati/CypresswithCucumber
 
-2. Install NPM packages
+2. Install NPM packages (for nodu modules and all the related dependencies)
     npm install
 
 3. Run following commands in the terminal to run this feature file in headless mode in Chrome browser and see test results in terminal-
